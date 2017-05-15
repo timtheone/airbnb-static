@@ -10,14 +10,11 @@
   // position: absolute;
   // bottom: 0;
   // width: 100%;
+  a {
+    font-size: 40px;
+    color: #CCCCCC;
+    &:hover {
+      color: $blue;
+    }
+  }
 }
-
-.footer a {
-  font-size: 40px;
-  color: #CCCCCC;
-}
-
-.footer a:hover {
-  color: #428BCA;
-}
-
