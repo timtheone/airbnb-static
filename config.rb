@@ -30,7 +30,7 @@ activate :autoprefixer
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
-data.flats.each do |name|
+data.flats.keys.each do |name|
   proxy "/flats/#{name}.html", "/flats/show.html", :locals => { :owner => name }, :ignore => true
 end
 
